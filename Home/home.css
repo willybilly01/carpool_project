@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+body{
+    min-height: 100vh;
+    background: url("../images/co2.jpg");
+    background-size: cover;
+    background-position: center;
+
+
+
+}
+
+.header {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: seagreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 32px;
+    color:#fff;
+    text-decoration:none;
+    font-weight: 700;
+    line-height: 1; 
+
+
+}
+
+.navbar {
+    display: flex; 
+    align-items: center; 
+
+}
+
+.navbar a{
+    position: relative;
+    font-size: 18px;
+    color:#fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left:40px;
+    line-height: 1; /* Add this line */
+
+}
+
+.navbar a::before{
+    content:'';
+    position: absolute;
+    top:100%;
+    left:0;
+    width:0%;
+    height : 2px;
+    background: #fff;
+    transition: 0.3s;
+
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.wrapper{
+    border: 1px solid white;
+    position: absolute;
+    width: 80vw;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left:50%;
+    display: flex;
+}
+.container{
+    width: 28vmin;
+    height: 28vmin;
+    border: 1px solid orange;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+i{
+    color: #18f;
+    
+}
