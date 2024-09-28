@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+body{
+    min-height: 100vh;
+    background: url("../images/co2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+
+}
+
+.header {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: seagreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 32px;
+    color:#fff;
+    text-decoration:none;
+    font-weight: 700;
+    line-height: 1; 
+
+
+}
+
+.navbar {
+    display: flex; 
+    align-items: center; 
+
+}
+
+.navbar a{
+    position: relative;
+    font-size: 18px;
+    color:#fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left:40px;
+    line-height: 1; /* Add this line */
+
+}
+
+.navbar a::before{
+    content:'';
+    position: absolute;
+    top:100%;
+    left:0;
+    width:0%;
+    height : 2px;
+    background: #fff;
+    transition: 0.3s;
+
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+.title-container{
+    display: flex;
+    justify-content: center; /* Centers the h1 in the div */
+    width: 100%;
+}
+.title-1{
+    font-size: 25px;
+    margin-top: 100px;
+    color: white;
+    background-color: rgba(0,0,0,0.6);
+    padding: 10px 20px;
+    display: inline-block; /* This ensures the background wraps around the text */
+    border-radius: 10px; /* Optional: Makes the background edges rounded */
+
+    
+}
+
+.hacer-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px; 
+    gap: 15px; /* Add spacing between buttons */
+}
+
+.day-button{
+    padding: 20px 20px;
+    font-size: 25px;
+    color: white;
+    background-color: rgba(0, 0, 0,0.6);;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.day-button.selected {
+    background-color: green; 
+}
+
+.input-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.text-input{
+    padding: 20px 20px;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5%;
+    width: 10%;
+}

@@ -1,5 +1,5 @@
 let valueDisplays = document.querySelectorAll(".num");
-let interval = 1500;
+let interval = 1000;
 valueDisplays.forEach((valueDisplay) => {
   let startValue = 0;
   let endValue = parseInt(valueDisplay.getAttribute("data-val"));

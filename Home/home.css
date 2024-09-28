@@ -73,7 +73,7 @@ body{
 .button-container {
     display: flex;
     justify-content: center;
-    margin-top: 800px; 
+    margin-top: 600px; 
 }
 
 .button {
